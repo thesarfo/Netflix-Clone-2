@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* this is the starting of the page, where the main movie and its details are */
+
+.head {
+  background-image: url(./images/banner2.jpg);
+  background-size: cover;
+  height: 70vh;
+}
+
+.logo {
+  padding: 1.875em;
+}
+
+.mn {
+  display: flex;
+  margin: 9.375em auto auto 5em;
+  flex-direction: column;
+  width: 25em;
+}
+
+.mn h1 {
+  font-size: 3.75em;
+  font-weight: bold;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.125;
+}
+
+/* button styling */
+
+.pl-ml button {
+  background-color: rgba(128, 128, 128, 0.596);
+  width: 6.25em;
+  padding: 0.31em;
+  border: none;
+  margin: 0.125em;
+}
+
+.pl-ml button:hover {
+  background-color: #e50914;
+  transition: 0.5s ease-in-out;
+}
+
+/* about the movie above */
+.about {
+  flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
+}
+
+/* this is the movie section */
+
+.ms {
+  background: rgba(0, 0, 0, 0.973);
+  height: fit-content;
+  padding: 1.5625em;
+}
+
+.ms > h1 {
+  font-family: "Bebas Neue", cursive;
+  padding: 1.875em;
+  letter-spacing: 0.125em;
+}
+
+/* netflix originals */
+.orig {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 0.625em;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.orig > div > img {
+  width: 12.5em;
+}
+
+/* hover effect */
+
+/* .orig >div >img:hover{
+  width: 230px;
+  transition: 0.5s ease-in-out;
+} */
+
+/* i want to hide the scrollbar under every grid, but still keep functionality */
+.orig::-webkit-scrollbar {
+  display: none;
+}
+
+.orig {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* trending now */
+.tr-n {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  overflow-y: hidden;
+  overflow-x: auto;
+  grid-gap: 0.625em;
+}
+
+.tr-n > div > img {
+  width: 12.5em;
+}
+
+/* hiding scroll */
+
+.tr-n::-webkit-scrollbar {
+  display: none;
+}
+
+.orig {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* top rated */
+.top-r {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  overflow-y: hidden;
+  overflow-x: auto;
+  grid-gap: 0.625em;
+}
+
+.top-r > div > img {
+  width: 12.5em;
+}
+
+/* hiding scroll */
+
+.top-r::-webkit-scrollbar {
+  display: none;
+}
+
+.top-r {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* action movies */
+.ac-m {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  overflow-y: hidden;
+  overflow-x: auto;
+  grid-gap: 0.625em;
+}
+
+.ac-m > div > img {
+  width: 12.5em;
+}
+
+/* hiding scroll */
+.ac-m::-webkit-scrollbar {
+  display: none;
+}
+
+.ac-m {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* comedy movies */
+.cd-m {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  overflow-y: hidden;
+  overflow-x: auto;
+  grid-gap: 0.625em;
+}
+
+.cd-m > div > img {
+  width: 12.5em;
+}
+
+/* hiding scroll */
+.cd-m::-webkit-scrollbar {
+  display: none;
+}
+
+.cd-m {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* horror movies */
+.hr-m {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  overflow-y: hidden;
+  overflow-x: auto;
+  grid-gap: 0.625em;
+}
+
+.hr-m > div > img {
+  width: 12.5em;
+}
+
+/* hiding scroll */
+.hr-m::-webkit-scrollbar {
+  display: none;
+}
+
+.hr-m {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* romance movies */
+.rm-m {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  overflow-y: hidden;
+  overflow-x: auto;
+  grid-gap: 0.625em;
+}
+
+.rm-m > div > img {
+  width: 12.5em;
+}
+
+/* hiding scroll */
+.rm-m::-webkit-scrollbar {
+  display: none;
+}
+
+.rm-m {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* documentaries */
+.dc-m {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  overflow-y: hidden;
+  overflow-x: auto;
+  grid-gap: 0.625em;
+}
+
+.dc-m > div > img {
+  width: 12.5em;
+}
+
+/* hiding scroll */
+.dc-m::-webkit-scrollbar {
+  display: none;
+}
+
+.dc-m {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* making it responsive */
+@media only screen and (max-width: 600px) {
+  .main{
+    font-size: 0.7em;
+  }
+  .logo{
+    padding: 0.5em 0 0 3.5em;
+  }
+}
